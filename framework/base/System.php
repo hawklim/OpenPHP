@@ -20,33 +20,7 @@ use openphp\system\exception\OpenException;
  */
 class System
 {
-    /*
-     * function __construct()
-     * {
-     *     self::$instance = & $this;
-     * }
-     * public static function & get_instance() {
-     *     return  self::$instance;
-     * }
-     */
 
-    /**
-     * 加载过的类
-     *
-     * @var array
-     */
-    // private static $loaded = array();
-
-    /**
-     * 判断是否加载过
-     *
-     * @return void
-     */
-    // private function isLoaded($class)
-    // {
-        // if (isset(self::$loaded[$class]))
-            // return;
-    // }
     /**
      * 加载模型类
      *
