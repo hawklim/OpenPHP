@@ -94,7 +94,7 @@ class Open extends System
     {
         if(isset(self::$coreClassMap[$class])) {
             // 核心类库无需使用requireOnce，全部new时一次性在此加载
-            require(self::$coreClassMap[$class]);
+            require(OPEN_PATH . self::$coreClassMap[$class]);
         }elseif(substr($class, -10) == 'Controller') {
             requireOnce(APP_PATH . '/controllers/' . $class . '.php', $class);
         }elseif(substr($class, -5) == 'Model'){
